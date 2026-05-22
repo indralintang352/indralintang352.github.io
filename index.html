@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everline Food Ltd | Premium Food E-commerce & Supply Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcfbf7; }
+        .font-serif-culinary { font-family: 'Playfair Display', serif; }
+        
+        .hero-food {
+            background: linear-gradient(rgba(34, 43, 33, 0.7), rgba(34, 43, 33, 0.85)), 
+                        url('https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2074&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .olive-accent {
+            background-color: #364d37;
+        }
+
+        .text-olive-accent {
+            color: #364d37;
+        }
+
+        .border-olive-accent {
+            border-color: #364d37;
+        }
+
+        .food-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .food-card:hover {
+            transform: translateY(-6px);
+            border-color: #a3b899;
+            box-shadow: 0 20px 25px -5px rgba(54, 77, 55, 0.05);
+        }
+    </style>
+</head>
+<body class="text-stone-800 antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#364d37] rounded-xl flex items-center justify-center shadow-md">
+                    <i class="fas fa-carrot text-amber-100 text-lg"></i>
+                </div>
+                <div class="leading-none">
+                    <span class="text-xl font-serif-culinary font-bold tracking-tight text-stone-900 block uppercase">EVERLINE</span>
+                    <span class="text-[9px] uppercase tracking-[0.4em] font-bold text-[#364d37]">Food Limited</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-widest text-stone-500">
+                <a href="#home" class="hover:text-stone-900 transition">Beranda</a>
+                <a href="#categories" class="hover:text-stone-900 transition">Kategori</a>
+                <a href="#logistics" class="hover:text-stone-900 transition">Distribusi</a>
+                <a href="#contact" class="hover:text-stone-900 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-food h-screen flex items-center px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto w-full relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-amber-100 text-[10px] font-bold mb-8 uppercase tracking-widest">
+                    <i class="fas fa-certificate"></i> D-U-N-S REGISTERED • DN6 8DA
+                </div>
+                <h1 class="text-5xl md:text-7xl font-serif-culinary font-bold text-white mb-8 leading-[1.1] tracking-tight">
+                    Kesegaran Alami, <br><span class="text-amber-200 italic font-normal">Langsung ke Dapur Anda.</span>
+                </h1>
+                <p class="text-lg text-stone-300 mb-12 leading-relaxed max-w-xl font-light">
+                    Everline Food Limited menyediakan solusi ritel internet pangan terpercaya, mendistribusikan bahan makanan berkualitas tinggi dengan standar kesegaran yang ketat di seluruh United Kingdom.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <a href="#categories" class="bg-amber-100 text-stone-900 px-10 py-4 font-bold uppercase text-[11px] tracking-widest hover:bg-white transition-all text-center">
+                        Lihat Katalog Pangan
+                    </a>
+                    <a href="#contact" class="border border-stone-500 text-white px-10 py-4 font-bold uppercase text-[11px] tracking-widest hover:bg-white hover:text-stone-900 transition-all text-center">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="categories" class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+                <div class="max-w-xl">
+                    <h2 class="text-3xl md:text-5xl font-serif-culinary font-bold text-stone-900 mb-6 uppercase tracking-tight">E-commerce Pangan Terpadu</h2>
+                    <p class="text-stone-500 leading-relaxed font-light border-l-2 border-[#364d37] pl-8 italic">"Kami mengintegrasikan teknologi ritel internet (SIC 47910) untuk memangkas waktu distribusi produk pangan dari sumbernya."</p>
+                </div>
+                <div class="text-stone-200 font-serif-culinary text-5xl font-bold tracking-widest hidden lg:block">DUNS 234589634</div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-10 bg-[#fdfcf9] border border-stone-100 food-card group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-[#364d37] transition-colors">
+                        <i class="fas fa-apple-whole text-2xl text-stone-600 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-serif-culinary font-bold mb-4 text-stone-900 uppercase tracking-tight">Fresh Produce</h4>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Kurasi sayur dan buah organik premium pilihan yang langsung dikemas dengan kontrol suhu optimal.</p>
+                </div>
+                <div class="p-10 bg-[#fdfcf9] border border-stone-100 food-card group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-[#364d37] transition-colors">
+                        <i class="fas fa-utensils text-2xl text-stone-600 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-serif-culinary font-bold mb-4 text-stone-900 uppercase tracking-tight">Artisanal Groceries</h4>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Penyediaan bahan baku memasak dan produk olahan lokal yang aman dikonsumsi oleh seluruh keluarga.</p>
+                </div>
+                <div class="p-10 bg-[#fdfcf9] border border-stone-100 food-card group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-[#364d37] transition-colors">
+                        <i class="fas fa-truck-ramp-box text-2xl text-stone-600 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-serif-culinary font-bold mb-4 text-stone-900 uppercase tracking-tight">Secure Logistics</h4>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Pengiriman pangan harian terjadwal untuk menjaga kesegaran nutrisi produk tetap utuh hingga tempat tujuan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="logistics" class="py-32 px-6 bg-[#364d37] text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-24 relative z-10">
+            <div class="md:w-1/2">
+                <h3 class="text-4xl font-serif-culinary font-bold text-white mb-8 uppercase tracking-widest">Hub Distribusi <br><span class="text-amber-200 italic font-normal">Doncaster</span></h3>
+                <p class="text-stone-300 mb-10 text-lg font-light leading-relaxed">Beroperasi dari **43 Owston Road, Carcroft**, Everline Food Limited memastikan pemenuhan pesanan bahan makanan online berjalan dengan standar higienitas tertinggi di Inggris.</p>
+                
+                <div class="space-y-6 text-xs tracking-wider uppercase font-semibold">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-map-marker-alt text-amber-200 text-lg"></i>
+                        <span class="text-stone-200">43 Owston Road, Carcroft, Doncaster, DN6 8DA, United Kingdom</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-id-card-clip text-amber-200 text-lg"></i>
+                        <span class="text-stone-200">D-U-N-S ID: 23-458-9634</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" alt="Food Logistic Center" class="rounded shadow-2xl grayscale hover:grayscale-0 transition duration-1000">
+                    <div class="absolute -bottom-8 -right-8 bg-white p-8 hidden md:block rounded shadow-xl">
+                        <i class="fas fa-apple-whole text-4xl text-stone-900"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white py-32 px-6 border-t border-stone-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-serif-culinary font-bold text-stone-900 mb-12 uppercase tracking-tight">Hubungi Everline</h2>
+            <p class="text-stone-500 mb-16 text-lg font-light">Untuk korespondensi resmi, pertanyaan ketersediaan suplai produk pangan, atau kemitraan ritel ritel internet, silakan hubungi kami.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-left mb-20">
+                <div class="p-10 bg-[#fdfcf9] border border-stone-200 rounded-2xl">
+                    <p class="text-[#364d37] text-[10px] uppercase tracking-widest mb-4 font-bold">Registered Office</p>
+                    <p class="text-stone-800 font-serif-culinary text-md font-bold tracking-wide uppercase">43 Owston Road, Carcroft, Doncaster, DN6 8DA, UK</p>
+                </div>
+                <div class="p-10 border border-stone-200 rounded-2xl bg-[#fdfcf9] flex flex-col justify-center">
+                    <p class="text-[#364d37] text-[10px] uppercase tracking-widest mb-4 font-bold">Digital Desk</p>
+                    <p class="text-stone-800 font-bold text-md tracking-widest uppercase">supply@everlinefood.co.uk</p>
+                    <p class="text-xs text-stone-400 mt-2">UK Retail Hours Apply</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center pt-20 border-t border-stone-100 gap-10">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-stone-900 flex items-center justify-center rounded">
+                        <i class="fas fa-carrot text-white text-xs"></i>
+                    </div>
+                    <span class="text-xs font-bold tracking-[0.5em] uppercase text-stone-900 leading-none">Everline Food Limited</span>
+                </div>
+                <p class="text-[9px] text-stone-400 uppercase tracking-[0.5em] font-bold">
+                    &copy; 2026 Everline Food Ltd. Registered in England & Wales.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
